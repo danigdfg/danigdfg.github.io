@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Online - Acerca de Nosotros</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Menú igual que en index.html -->
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Tienda Moda Lujo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="/catalog.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="/cart.html">Carrito</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/about.html">Acerca de</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="/login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5 about-section" data-aos="fade-up">
+    <button class="btn btn-secondary mb-4" onclick="window.location.href='/'"><i class="fas fa-arrow-left"></i> Volver al Inicio</button>
+    <h2 class="text-center mb-5">Acerca de Nosotros</h2>
+    <div class="row">
+      <div class="col-md-6" data-aos="zoom-in">
+        <img src="/images/about-image.jpg" class="img-fluid rounded" alt="Nuestra Tienda"> <!-- Agrega una imagen local en public/images/ -->
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <h3>Nuestra Misión</h3>
+        <p>Proporcionar moda accesible, de alta calidad y sostenible, inspirada en las tendencias globales, para que todos puedan expresar su estilo único.</p>
+        <h3>Nuestra Visión</h3>
+        <p>Ser la tienda online líder en ropa, calzado y maquillaje, reconocida por innovación, servicio excepcional y compromiso con la comunidad.</p>
+        <h3>Nuestro Equipo</h3>
+        <p>Un grupo de apasionados por la moda con más de 10 años de experiencia en diseño, ventas y tecnología, dedicados a ofrecerte lo mejor.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer igual que en index.html -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2023 Tienda Moda Lujo. Todos los derechos reservados.</p>
+    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i> Instagram</a> |
+    <a href="#" class="text-white ms-3"><i class="fab fa-facebook"></i> Facebook</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, easing: 'ease-in-out' }); /* Animaciones mejoradas */
+  </script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

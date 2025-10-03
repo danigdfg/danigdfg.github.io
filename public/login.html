@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Online - Login/Registro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Tienda Moda Lujo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="/catalog.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="/cart.html">Carrito</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about.html">Acerca de</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5" data-aos="fade-up">
+    <button class="btn btn-secondary mb-4" onclick="window.location.href='/'"><i class="fas fa-arrow-left"></i> Volver al Inicio</button>
+    <h2 class="text-center mb-4">Acceso a Cuenta</h2>
+    <ul class="nav nav-tabs" id="authTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab">Login</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab">Registrarse</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="authTabContent" data-aos="zoom-in">
+      <div class="tab-pane fade show active" id="login" role="tabpanel">
+        <form id="loginForm" class="mt-3">
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="loginEmail" required>
+          </div>
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="loginPassword" required>
+          </div>
+          <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</button>
+        </form>
+        <p class="mt-3">Usa "admin@tienda.com" / "admin123" para modo admin.</p>
+      </div>
+      <div class="tab-pane fade" id="register" role="tabpanel">
+        <form id="registerForm" class="mt-3">
+          <div class="mb-3">
+            <label for="registerEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="registerEmail" required>
+          </div>
+          <div class="mb-3">
+            <label for="registerPassword" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="registerPassword" required>
+          </div>
+          <button type="submit" class="btn btn-primary"><i class="fas fa-user-plus"></i> Registrarse</button>
+        </form>
+      </div>
+    </div>
+    <div id="formResponse" class="mt-3"></div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2023 Tienda Moda Lujo. Todos los derechos reservados.</p>
+    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i> Instagram</a> |
+    <a href="#" class="text-white ms-3"><i class="fab fa-facebook"></i> Facebook</a>
+  </footer>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, easing: 'ease-in-out' });
+  </script>
+  <script src="js/scripts.js"></script>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', loginUser);
+    document.getElementById('registerForm').addEventListener('submit', registerUser);
+  </script>
+</body>
+</html>

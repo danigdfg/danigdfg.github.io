@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Online - Catálogo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Tienda Moda Lujo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/catalog.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="/cart.html">Carrito</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about.html">Acerca de</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="/login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5" data-aos="fade-up">
+    <button class="btn btn-secondary mb-4" onclick="window.location.href='/'"><i class="fas fa-arrow-left"></i> Volver al Inicio</button>
+    <h2 class="text-center mb-4">Catálogo de Productos</h2>
+    <div class="row">
+      <div class="col-md-3" data-aos="zoom-in">
+        <h4>Filtros</h4>
+        <input type="text" id="searchInput" class="form-control mb-2" placeholder="Buscar por nombre...">
+        <select id="categoryFilter" class="form-select mb-2">
+          <option value="">Todas categorías</option>
+          <option value="ropa">Ropa</option>
+          <option value="calzado">Calzado</option>
+          <option value="maquillaje">Maquillaje</option>
+        </select>
+        <input type="number" id="minPrice" class="form-control mb-2" placeholder="Precio mín.">
+        <input type="number" id="maxPrice" class="form-control mb-2" placeholder="Precio máx.">
+        <select id="brandFilter" class="form-select mb-2">
+          <option value="">Todas marcas</option>
+          <option value="Zara">Zara</option>
+          <option value="Nike">Nike</option>
+          <option value="MAC">MAC</option>
+          <option value="H&M">H&M</option>
+          <option value="Gucci">Gucci</option>
+          <option value="Louis Vuitton">Louis Vuitton</option>
+          <option value="Chanel">Chanel</option>
+          <option value="Prada">Prada</option>
+          <option value="Hermes">Hermes</option>
+          <option value="Dior">Dior</option>
+          <option value="Balenciaga">Balenciaga</option>
+          <option value="Adidas">Adidas</option>
+        </select>
+        <button onclick="filterProducts()" class="btn btn-primary"><i class="fas fa-filter"></i> Aplicar Filtros</button>
+      </div>
+      <div class="col-md-9">
+        <div id="productList" class="row"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2023 Tienda Moda Lujo. Todos los derechos reservados.</p>
+    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i> Instagram</a> |
+    <a href="#" class="text-white ms-3"><i class="fab fa-facebook"></i> Facebook</a>
+  </footer>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, easing: 'ease-in-out' });
+  </script>
+  <script src="js/scripts.js"></script>
+  <script>
+    window.onload = loadProducts;
+  </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+[
+  {
+    "id": 1,
+    "name": "Vestido Floral Gucci",
+    "category": "ropa",
+    "price": 1200.00,
+    "brand": "Gucci",
+    "image": "/images/vestido-floral.jpg",
+    "reviews": [
+      {"user": "Ana", "rating": 5, "comment": "¡Hermoso diseño!"},
+      {"user": "Sofía", "rating": 4, "comment": "Elegante, pero caro."}
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Zapatillas Nike Air Max",
+    "category": "calzado",
+    "price": 180.00,
+    "brand": "Nike",
+    "image": "/images/zapatillas-nike.jpg",
+    "reviews": [
+      {"user": "Carlos", "rating": 5, "comment": "Super cómodas."}
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Labial MAC Ruby Woo",
+    "category": "maquillaje",
+    "price": 25.00,
+    "brand": "MAC",
+    "image": "/images/labial-mac.jpg",
+    "reviews": []
+  },
+  {
+    "id": 4,
+    "name": "Chaqueta de Cuero Zara",
+    "category": "ropa",
+    "price": 150.00,
+    "brand": "Zara",
+    "image": "/images/chaqueta-zara.jpg",
+    "reviews": [
+      {"user": "Laura", "rating": 3, "comment": "Buena, pero talla pequeña."}
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Botas Prada",
+    "category": "calzado",
+    "price": 850.00,
+    "brand": "Prada",
+    "image": "/images/botas-prada.jpg",
+    "reviews": [
+      {"user": "María", "rating": 5, "comment": "Calidad excepcional."}
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Paleta de Sombras Dior",
+    "category": "maquillaje",
+    "price": 60.00,
+    "brand": "Dior",
+    "image": "/images/paleta-dior.jpg",
+    "reviews": []
+  },
+  {
+    "id": 7,
+    "name": "Camisa Louis Vuitton",
+    "category": "ropa",
+    "price": 700.00,
+    "brand": "Louis Vuitton",
+    "image": "/images/camisa-lv.jpg",
+    "reviews": [
+      {"user": "Pedro", "rating": 4, "comment": "Elegante, pero delicada."}
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Sneakers Balenciaga Triple S",
+    "category": "calzado",
+    "price": 950.00,
+    "brand": "Balenciaga",
+    "image": "/images/sneakers-balenciaga.jpg",
+    "reviews": []
+  },
+  {
+    "id": 9,
+    "name": "Base Chanel Vitalumière",
+    "category": "maquillaje",
+    "price": 55.00,
+    "brand": "Chanel",
+    "image": "/images/base-chanel.jpg",
+    "reviews": [
+      {"user": "Elena", "rating": 5, "comment": "Cobertura perfecta."}
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Pantalones H&M",
+    "category": "ropa",
+    "price": 45.00,
+    "brand": "H&M",
+    "image": "/images/pantalones-hm.jpg",
+    "reviews": []
+  }
+]
