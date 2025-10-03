@@ -1,0 +1,132 @@
+body {
+  background: #FFFFFF; /* Blanco premium */
+  font-family: 'Montserrat', sans-serif; /* Tipografía moderna */
+  color: #333;
+}
+
+.navbar {
+  background-color: #000000 !important; /* Negro premium */
+}
+
+.navbar-brand, .nav-link {
+  color: #D4AF37 !important; /* Oro para lujo */
+  font-family: 'Playfair Display', serif;
+  transition: color 0.3s ease; /* Transición suave */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #FFFFFF !important; /* Blanco al hover */
+}
+
+.jumbotron {
+  background-color: transparent;
+  padding: 3rem 2rem; /* Más espacio para profesionalismo */
+}
+
+.card {
+  border: none;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Sombra más profunda */
+  border-radius: 10px; /* Bordes redondeados */
+  transition: transform 0.4s ease, box-shadow 0.4s ease; /* Animación mejorada */
+}
+
+.card:hover {
+  transform: translateY(-8px); /* Elevación al hover */
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.zoom-img {
+  transition: transform 0.5s ease; /* Transición suave */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.zoom-img:hover {
+  transform: scale(1.15); /* Zoom sutil mejorado */
+}
+
+.btn-primary {
+  background-color: #001F3F; /* Azul profundo para CTAs */
+  border-color: #001F3F;
+  color: #FFFFFF;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Animación en botones */
+}
+
+.btn-primary:hover {
+  background-color: #003366;
+  transform: scale(1.05); /* Ligero zoom al hover */
+}
+
+.btn-secondary {
+  background-color: #F8F9FA; /* Gris claro para secundarios */
+  color: #000000;
+  border-color: #D4AF37; /* Borde oro */
+}
+
+footer {
+  background-color: #000000;
+  color: #D4AF37;
+  padding: 2rem 0; /* Más padding para profesionalismo */
+}
+
+footer a {
+  color: #D4AF37;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #FFFFFF;
+}
+
+/* Estilos para carrusel más pequeño */
+.carousel-sm {
+  max-height: 300px; /* Altura reducida */
+  overflow: hidden;
+}
+
+.carousel-sm img {
+  object-fit: cover; /* Escala la imagen sin distorsión */
+  height: 300px; /* Altura fija */
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  padding: 10px;
+}
+
+.carousel-caption h5 {
+  font-size: 1.2rem;
+}
+
+.carousel-caption p {
+  font-size: 0.9rem;
+}
+
+/* Secciones profesionales */
+.about-section {
+  background-color: #F8F9FA; /* Gris claro */
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+  .carousel-sm {
+    max-height: 200px;
+  }
+  .carousel-sm img {
+    height: 200px;
+  }
+  .carousel-caption h5 {
+    font-size: 1rem;
+  }
+  .carousel-caption p {
+    font-size: 0.8rem;
+  }
+  .about-section {
+    padding: 2rem;
+  }
+}
